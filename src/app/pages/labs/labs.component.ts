@@ -16,6 +16,10 @@ export class LabsComponent {
     'Crear un proyecto con Angular',
     'Crear componentes'
   ]
-  name = ' Martin'
-  age = 33
+  name = ' Martin';
+  age = 33;
+  keydownHandler(event: KeyboardEvent) {
+    const input = event.target as HTMLInputElement;
+    alert(input.value)
+  }
 }
