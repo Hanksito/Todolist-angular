@@ -3,17 +3,19 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-labs',
   standalone: true,
-  imports: [RouterOutlet, CommonModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [CommonModule, RouterOutlet],
+  templateUrl: './labs.component.html',
+  styleUrl: './labs.component.css'
 })
-export class AppComponent {
+export class LabsComponent {
   welcome = 'hola';
   tasks = [
     'Instalar el Angular CLI',
     'Crear un proyecto con Angular',
     'Crear componentes'
   ]
+  name = ' Martin'
+  age = 33
 }
