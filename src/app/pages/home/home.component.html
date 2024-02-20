@@ -30,7 +30,7 @@
           </li>
         </ul>
       </section>
-      <footer class="footer">
+      <footer class="footer" *ngIf="tasks().length > 0">
         <span class="todo-count"><strong>{{filterTask().length}}</strong> {{filterTask().length > 1 ? 'items': 'item'}} </span>
         <ul class="filters">
           <li>
